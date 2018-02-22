@@ -3,7 +3,7 @@ from random import randint
 num = randint(0,100)
 
 print("Guess # 1 [make sure it is an integer]: ")
-guess = int(input()) 
+guess = int(input("")) 
 
 i = 2
 win = 0
