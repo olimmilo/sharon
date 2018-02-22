@@ -33,4 +33,4 @@ while i <= numofguess:
     i+=1
         
 if win != 1:
-    print("Sorry bruh, you lost")
+    print("Sorry bruh, you lost by", error)
