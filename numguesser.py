@@ -17,7 +17,7 @@ while i <= 5:
         print("Higher")
     elif error < 0:
         print("Lower")
-    guess = int(input("Guess #% [make sure it is an integer]: " % (i)))
+    guess = int(input("Guess #", i, " [make sure it is an integer]: " sep="")
     i+=1
         
 if win != 1:
