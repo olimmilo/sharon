@@ -1,6 +1,16 @@
 from random import randint
 
-num = randint(0,100)
+
+print("What shall the lower limit be [make sure it is an integer]: ")
+lower = int(input("")) 
+
+print("What shall the upper limit be [make sure it is an integer]: ")
+upper = int(input("")) 
+
+print("How many guesses should you get [make sure it is an integer]: ")
+numofguess = int(input("")) 
+
+num = randint(lower,upper)
 
 print("Guess # 1 [make sure it is an integer]: ")
 guess = int(input("")) 
@@ -8,7 +18,7 @@ guess = int(input(""))
 i = 2
 win = 0
 
-while i <= 5:
+while i <= numofguess:
     error = num-guess
     if error == 0:
         print("You win, your parents are proud")
