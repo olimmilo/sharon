@@ -2,7 +2,7 @@ from random import randint
 
 num = randint(0,100)
 
-guess = int(input("Guess #1 (make sure it is an integer): ")) 
+guess = int(input("Guess #1 [make sure it is an integer]: ")) 
 
 i = 2
 win = 0
@@ -17,7 +17,7 @@ while i <= 5:
         print("Higher")
     elif error < 0:
         print("Lower")
-    guess = int(input("Guess #% (make sure it is an integer): " % (i)))
+    guess = int(input("Guess #% [make sure it is an integer]: " % (i)))
     i+=1
         
 if win != 1:
